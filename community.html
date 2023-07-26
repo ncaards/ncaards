@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "icon" href = "images/ball.png" type = "image">
+    <title>NCAARDS beta | Community</title>
+</head>
+<body>
+    <div class="showcase">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo"><a href="index.html">NCAARDS beta</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="market.html">Market</a></li>
+                        <li><a href="myteam.html">My team</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user"><i class="fa-regular fa-user fa-2x"></i></div>
+        </div>
+    
+         <!-- Log in | Register -->
+        <div class="showcase-form card">
+            <h2>Log in <br><a href="register.html">Register</a></h2>
+            <form name="contact" method="POST">                   
+                <div class="form-control">
+                    <input type="text" name="user" placeholder="User" required>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="password" placeholder="Password" required>
+                </div>
+                <input type="submit" value="Log In" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+    <!-- First pic -->
+    <div class="first">
+        <img src="images/fans.jpg" alt="">
+        <div class="text-primary p-3">
+            <h2 class="py-1">Community</h1>
+        </div>
+    </div>
+
+    <!-- Players -->
+    <section class="players container">
+        <br>
+        <h2 class="text-center md my-1">
+            Are you a player? Join now!
+        </h2>
+        <form name="contact" method="POST" class="text-center">            
+            <div class="form-control">
+                <input type="text" name="name" placeholder="Name" required>
+            </div><br>
+            <div class="form-control">
+                <input type="text" name="university" placeholder="University" required>
+            </div><br>
+            <div class="form-control">
+                <input type="text" name="sport" placeholder="Sport" required>
+            </div><br>
+            <div class="form-control">
+                <input type="email" name="email" placeholder="Email" required>
+            </div><br>  
+            <div>
+				<textarea type="text" name="Message" placeholder="Message" oninput="auto_grow(this)"></textarea>
+			</div>	<br>
+            <input type="submit" value="Send" class="btn btn-primary">
+        </form> <br>      
+    </section>
+
+    <!-- Fans -->
+    <section class="players fans bg-primary">
+        <div class="container">
+            <br>
+            <h2 class="text-center md my-1">
+                Are you a fan? There are many things you can do!
+            </h2>  
+            <p class="text-center sm my-1">
+                Be the first to know when the drops are occcuring!
+                Follow us on social media, join our Discord community
+                and suscribe to our newsletter.
+                We will soon announce free NFT raffles, so don't miss out anything!
+            </p>
+            <form name="contact" method="POST" class="text-center">            
+                <div class="form-control">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div><br>
+                <div class="form-control">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div><br>  
+                <div class="form-control">
+                    <input type="checkbox" name="subscribe" placeholder="Subscribe" required>
+                    <label for="subscribe">Subscribe to newsletter</label>
+                </div><br>  
+                <a href="#" class="btn btn-outline">Subscribe</a>
+            </form> <br> 
+        </div>
+   
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>NCAARDS</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-discord fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

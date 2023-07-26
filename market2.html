@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "icon" href = "images/ball.png" type = "image">
+    <title>NCAARDS beta | Market drops</title>
+</head>
+<body>
+    <div class="showcase">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="logo"><a href="index.html">NCAARDS beta</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li><a href="market2.html">Market</a></li>
+                        <li><a href="myteam.html">My team</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user"><i class="fa-regular fa-user fa-2x"></i></div>
+        </div>
+    
+         <!-- Log in | Register -->
+        <div class="showcase-form card">
+            <h2>Log in <br><a href="register.html">Register</a></h2>
+            <form name="contact" method="POST">                   
+                <div class="form-control">
+                    <input type="text" name="user" placeholder="User" required>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="password" placeholder="Password" required>
+                </div>
+                <input type="submit" value="Log In" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+    <!-- First pic -->
+    <div class="first">
+        <img src="images/seats.jpg" alt="">
+        <div class="text-primary p-3">
+            <h2 class="py-1">Market</h1>
+        </div>
+    </div>
+
+    <!-- Navbar Market -->
+    <div class="navbar navbar-market">
+        <div class="container flex">
+            <nav>
+                <ul>
+                    <li><a href="market.html" class="actual">New Drops</a></li>
+                    <li><a href="onsale.html">On sale</a></li>
+                    <li><a href="mylistings.html">My listings</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user"><i class="fa-regular fa-user fa-2x"></i></div>
+    </div>
+
+    <!-- Browser -->
+    <section class="browser">
+        <div class="container">
+            <header class="header">
+                <div class="grid">
+                    <i class="fas fa-search fa-2x"></i>
+                    <input type="text" id="filter" placeholder="Search by name or university" onkeyup="searchName()">
+                </div>
+            </header>
+        </div>
+    </section> 
+
+    <!-- New Drops -->
+    <section class="drops">
+        <div class="container">
+            <div class="countdown flex">
+                <ul>
+                  <li><span id="days"></span>Days</li>
+                  <li><span id="hours"></span>Hours</li>
+                  <li><span id="minutes"></span>Minutes</li>
+                  <li><span id="seconds"></span>Seconds</li>
+                </ul>
+            </div>
+
+            <ul id="myUL" class="items flex">
+                <li class="item">
+                    <img src="images/players/001.jpg" alt="">
+                    <div class="name">Anton Cooper</div>
+                    <div class="university">University of Minnesota</div>
+                    <a href="#">Anton Cooper, University of Minnesota</a>
+                    <div class="action">
+                        <a href="items/drop001.html">Bid</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="images/players/002.jpg" alt="">
+                    <div class="name">Bradley Martin</div>
+                    <div class="university">University of Minnesota</div>
+                    <a href="#">Bradley Martin, University of Minnesota</a>
+                    <div class="action">
+                        <a href="items/drop001.html">Bid</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="images/players/003.jpg" alt="">
+                    <div class="name">Carl Smith</div>
+                    <div class="university">University of Wisconsin</div>
+                    <a href="#">Carl Smith, University of Wisconsin</a>
+                    <div class="action">
+                        <a href="items/drop001.html">Bid</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="images/players/004.jpg" alt="">
+                    <div class="name">Aron Walsh</div>
+                    <div class="university">University of Illinois</div>
+                    <a href="#">Aron Walsh, University of Illinois</a>
+                    <div class="action">
+                        <a href="items/drop001.html">Bid</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="images/players/005.jpg" alt="">
+                    <div class="name">Steven Rodgers</div>
+                    <div class="university">University of Florida</div>
+                    <a href="#">Steven Rodgers, University of Florida</a>
+                    <div class="action">
+                        <a href="items/drop001.html">Bid</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="images/players/006.jpg" alt="">
+                    <div class="name">Brycen Morgan</div>
+                    <div class="university">University of Cincinatti</div>
+                    <a href="#">Brycen Morgan, University of Cincinatti</a>
+                    <div class="action">
+                        <a href="items/drop001.html">Bid</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="images/players/007.jpg" alt="">
+                    <div class="name">TJ Williams</div>
+                    <div class="university">University of Minnesota</div>
+                    <a href="#">TJ Williams, University of Minnesota</a>
+                    <div class="action">
+                        <a href="items/drop001.html">Bid</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>NCAARDS</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Frequently Asked Questions</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-discord fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
